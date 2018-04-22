@@ -4,4 +4,9 @@
 
 function play(box) {
 	box.innerHTML = box.id;
+<<<<<<< HEAD
 };
+=======
+};
+
+>>>>>>> gh-pages

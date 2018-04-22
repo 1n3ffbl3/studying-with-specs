@@ -3,7 +3,6 @@
 // 	a populateBoard function that writes the boardState into the html
 // 	each td will have a 'row' and a 'column' attribute
 
-
 var nextPlayer = true;
 
 var boardState = [
@@ -33,9 +32,9 @@ function play(box) {
 
 function populateBoard() {
 	var elementID = 0;
-	for(var i = 0; i < 3; i++) {
-		for(var j = 0; j < 3; j++) {
-			document.getElementById(elementID).innerHTML = boardState[i][j];
+	for(var row = 0; row < 3; row++) {
+		for(var col = 0; col < 3; col++) {
+			document.getElementById(elementID).innerHTML = boardState[row][col];
 			elementID++;
 		};
 	};

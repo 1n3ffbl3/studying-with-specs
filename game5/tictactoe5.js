@@ -32,12 +32,12 @@ function populateBoard() {
 	var board = document.getElementById('ticTacBoard').children[0].children;
 	var row;
 	var column;
-	for(var i = 0; i < 3; i++) {
-		row = board[i].children;
-		for(var j = 0; j < 3; j++) {
-			column = row[j];
-			column.innerHTML = boardState[i][j];
+	for(var r = 0; r < 3; r++) {
+		row = board[r].children;
+		for(var col = 0; col < 3; col++) {
+			column = row[col]; //board[r].children[col]
+			column.innerHTML = boardState[r][col];
 		};
 	};
-};
+}; 
 

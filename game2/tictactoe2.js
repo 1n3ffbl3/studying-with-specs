@@ -23,5 +23,5 @@ function play(box) {
 	} else {
 		alert('grow up. you can\'t do that')
 	};
-	console.log(boardState);
+	//console.log(boardState);
 };
