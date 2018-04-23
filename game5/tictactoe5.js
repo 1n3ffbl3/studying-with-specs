@@ -7,7 +7,7 @@ var boardState = [
 	[null, null, null],
 	[null, null, null],
 	[null, null, null]
-	];
+];
 
 function play(box) {
 	var row = box.parentElement.getAttribute('row');

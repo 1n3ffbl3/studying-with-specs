@@ -20,7 +20,7 @@ METHODS: 2
         VARIABLE2: column
             Initialized: Value of column attribute in DOM box element.
 
-		BEHAVIOR: If null equals to boardState at row and column than depending on state of nextPlayer it assigns the new value into boardState[row][column]. After assignment it toggles nextPlayer. Then refresh the board by calling function populateBoard.If boardState from box.id is not equal null,then it shows alert message.
+		BEHAVIOR: This function is reading the user's input, which box did they click. If the clicked square was empty, it updates boardstate according to nextPlayer & the user input (ie which square). If the square was filled, it doesn't place the move and tell the user their move is invalid. It calls populateBoard to update the UI. It is switching to next player.
 
 		PURPOSE: It says what is the order in game and what you can and can't do. Refresh the board if move is done correctly.
 
@@ -38,4 +38,4 @@ METHODS: 2
 
         PURPOSE: It writes the boardState into the html.  
 
-        BEHAVIOR: It populates the board for tictactoe game by iterating over all elements of boardState array and assigning its value to concrete field on the board. We assign all the rows to board variable. We declare two support variables row and column, which at declaration time are undefined. After that we iterate over each row.  Next, we iterate in nested loop over all the columns.   
+        BEHAVIOR: It populates the board for tictactoe game with boardState. It assigns all the rows, which are stored in HTMLCollection (table -> tbody -> [tr, tr, tr]), to board variable. 

@@ -1,3 +1,9 @@
+DIFFERENCE BETWEEN PURPOSE & BEHAVIOR & IMPLEMENTATION: 
+
+// purpose: a user can ...
+// behavior: what has changed AFTER the function is done running
+// implementation: what is written between the curly braces to make the behavior possible
+
 Consider the following line
 a = a + 2
 

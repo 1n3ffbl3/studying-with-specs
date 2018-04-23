@@ -1,0 +1,65 @@
+ GLOBAL SCOPE: 
+		BOOLEAN: nextPlayer
+		  Initialized: true
+          PURPOSE: to ensure the same player doesn't play twice in a row
+
+        ARRAY: boardState
+          Initialized: 3 Arrays, each with 3 null's
+          PURPOSE: to keep track of the board outside of the DOM
+
+METHODS: 4
+	play: function
+		ARGS: 1
+			box: DOM object 
+			PURPOSE: Give acccess to box object
+	    RETURN: undefined
+
+        VARIABLE1: row
+            Initialized: Value of row attribute in DOM box element, accessed by parent element of column 
+            
+        VARIABLE2: column
+            Initialized: Value of column attribute in DOM box element.
+
+		BEHAVIOR: This function is reading the user's input, which box did they click. If the clicked square was empty, it updates boardstate according to nextPlayer & the user input (ie which square). If the square was filled, it doesn't place the move and tell the user their move is invalid. It calls populateBoard to update the UI. It is switching to next player.
+      
+		PURPOSE: It checks if the move of player is correct.
+    
+    populateBoard: function
+        ARGS:0
+        VARIABLE1: board
+            Initialized: From DOM we have to take table(parent element) and then tbody (which might be first or second child) and children of this tbody.
+        VARIABLE2: row
+            Initialized: undefined
+        VARIABLE3: column
+            Initialized: undefined
+
+        RETURN: undefined
+
+        PURPOSE: It writes the boardState into the html. 
+
+        BEHAVIOR: It populates the board for tictactoe game with boardState. It assigns all the rows, which are stored in HTMLCollection (table -> tbody -> [tr, tr, tr]), to board variable. 
+         
+
+    buildBoard: function
+        ARGS:0
+        VARIABLE1: board
+        Initialized: From DOM we have to take table element by his id.
+
+        VARIABLE2: row
+        Initialized: undefined
+
+        VARIABLE3: cell
+        Initialized: undefined
+        
+        PURPOSE: It prepares the board for tictactoe game.
+
+        BEHAVIOR: When page is loaded, it dynamically creates board for tictactoe game.
+ 
+    
+    OBJECT: window
+        PURPOSE: Reference to window object
+        
+        BEHAVIOR:It uses method which adds a listener on 'DOMContentLoaded' event and creates new function which calls buildBoard function.  
+			
+
+
