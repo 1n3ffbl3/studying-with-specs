@@ -20,9 +20,7 @@ METHODS: 2
         VARIABLE2: column
             Initialized: Value of column attribute in DOM box element.
 
-		BEHAVIOR: If null equals to boardState at row [row] and column [column] than depending on state (true/false) of nextPlayer it assigns the value of "x" or "o" into boardState[row][column]. After assignment it toggles nextPlayer. 
-		Then refresh the board by calling function populateBoard.
-		If boardState from box.id is not equal null,then it shows alert message.
+		BEHAVIOR: If null equals to boardState at row and column than depending on state of nextPlayer it assigns the new value into boardState[row][column]. After assignment it toggles nextPlayer. Then refresh the board by calling function populateBoard.If boardState from box.id is not equal null,then it shows alert message.
 
 		PURPOSE: It says what is the order in game and what you can and can't do. Refresh the board if move is done correctly.
 
@@ -40,4 +38,4 @@ METHODS: 2
 
         PURPOSE: It writes the boardState into the html.  
 
-        BEHAVIOR: We assign all the rows, which are stored in HTMLCollection (table -> tbody -> [tr, tr, tr]), to board variable. We declare two support variables row and column, which at declaration time are undefined. After that we iterate over each row. For each row, we assign all the columns to given row (board[r].children), to "row" variable. Next, we iterate in nested loop over all the columns. For each column, we assign value of column to "column" variable (row[col]). It gives us access to concrete cell on the board. Then we assign the value of boardState[r][col] to column innerHTML property.  
+        BEHAVIOR: It populates the board for tictactoe game by iterating over all elements of boardState array and assigning its value to concrete field on the board. We assign all the rows to board variable. We declare two support variables row and column, which at declaration time are undefined. After that we iterate over each row.  Next, we iterate in nested loop over all the columns.   

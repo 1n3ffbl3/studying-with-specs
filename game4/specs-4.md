@@ -20,7 +20,7 @@ METHODS: 2
         VARIABLE2: column
             Initialized: Value of column attribute in DOM box element.
 
-		BEHAVIOR: If null equals to boardState at row [row] and column [column] than depending on state (true/false) of nextPlayer it assigns the value of "x" or "o" into boardState[row][column]. After assignment it toggles nextPlayer. 
+		BEHAVIOR: If null equals to boardState at row and column than depending on state of nextPlayer it assigns the new value into boardState[row][column]. After assignment it toggles nextPlayer. 
 		Then refresh the board by calling function populateBoard.
 		If boardState from box.id is not equal null,then it shows alert message.
 
@@ -36,7 +36,7 @@ METHODS: 2
 
         PURPOSE: It writes the boardState into the html.
 
-        BEHAVIOR: For each row, we iterate over its columns.  This represents the current position on the board. We assign the value from the board of [row][column] into the correct td element in the html, which is selected by using elementID. After assignement of the value, we increment the elementID by 1, so it moves to next td element.  
+        BEHAVIOR: For each row, we iterate over its columns.  This represents the current position on the board. We assign the value from the board of [row][column] into the correct td element in the html, which is selected by using elementID. After assignement of the value, we increment the elementID by 1, so it moves to next td element.   
 
         
 			

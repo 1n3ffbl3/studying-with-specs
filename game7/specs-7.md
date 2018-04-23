@@ -62,11 +62,11 @@ METHODS: 5
         ARGS: 1
         checkBoardState: two dimensional array with states
         Purpose: Check when someone wins
-        BEHAVIOR: It calls two functions... In the nested function which takes one argument which is DOM object. 
+        BEHAVIOR: It calls two times function boxCheck with parameters 'x' and 'o' to check if there is a winning pattern for any of them. 
         METHODS: 1
             boxCheck: function
                 ARGS: 1 
-                box: anyvalue
+                box: any value
                 Purpose: Check if "x" or "o" wins
                 BEHAVIOR: It checks all combinations for tictactoe game, if a player has winning condition.
 

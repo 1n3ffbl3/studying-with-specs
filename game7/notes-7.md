@@ -26,3 +26,6 @@ window.addEventListener('DOMContentLoaded', function() {
 	DOMContentLoaded - event, When DOM  is fully loaded into the document variable
 */
 ```js
+
+winner function 
+		FULL BEHAVIOR: this function checks if any player (box) has a winning combination and if there is one, then it will display information that the player has won.

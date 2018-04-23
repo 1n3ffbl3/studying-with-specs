@@ -41,4 +41,7 @@ if (expression1) {
     //enters only if expression1 && expression2 are false and expression3 is true
 } else {
     //enters if every other condition is false
-}
+
+    
+function play 
+        FULL BEHAVIOR: If null equals to boardState from box.id than depending on state (true/false) of nextPlayer it assigns th`e value of "x" or "o" into boardState[box.id]. After assignment it toggles nextPlayer. If boardState from box.id is not equal null, then it shows alert message. Optionally display the boardState to console log. 

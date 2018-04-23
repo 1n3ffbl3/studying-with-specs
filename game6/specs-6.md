@@ -50,13 +50,13 @@ METHODS: 4
         VARIABLE3: cell
         Initialized: undefined
 
-    BEHAVIOR: We declare all variables that are specified. For each row, we add a row to the board at given index and assign return value to row variable. Additionally we add row attribute with current index. We iterate n-times, where n is defined as number of columns per row. In each iteration we create a cell by calling insertCell(index) and assign the return value to cell variable. In next lines we set innerHTML prop of cell corresponding state in boardState array. After that we add two attributes: column(current index) and onclick which is a event trigger with value "play(this)";
+    BEHAVIOR: We declare all variables that are specified. For each row, we add a row to the board at given index and assign return value to row variable. Additionally we add row attribute with current index. We iterate n-times, where n is defined as number of columns per row. In each iteration we create a cell and assign the return value to cell variable. In next lines we set innerHTML prop of cell corresponding state in boardState array. After that we add two attributes.
 
     
     OBJECT: window
         Purpose: Reference to window object
         
-    BEHAVIOR:  It uses method which adds a listener on 'DOMContentLoaded' event and creates new function which calls buildBoard function. 
+    BEHAVIOR:  It uses method which adds a listener on 'DOMContentLoaded' event and creates new function which calls buildBoard function.  
 			
 
 
